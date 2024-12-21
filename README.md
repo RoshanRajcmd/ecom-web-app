@@ -2,9 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
+## Tech Stack and Frameworks
+* Angular.js
+
+## Features
+1. Advance Search and Shop
+2. Add and Remove items to the cart
+3. Tags and Categorization of items
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` in a browser. The app will automatically reload if you change any of the source files.
 
 ## ScreenShots
 
