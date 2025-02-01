@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: ecom-client-app
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    ports:
+      - "4200:4200"
+
+#     depends_on:
+#       - backend
+#       - db
+
+#   backend:
+#     image: backend-image
+#     ports:
+#       - "4000:4000"
+#     environment:
+#       - DATABASE_URL=postgres://user:password@db:5432/mydatabase
+
+#   db:
+#     image: postgres:13
+#     environment:
+#       POSTGRES_USER: user
+#       POSTGRES_PASSWORD: password
+#       POSTGRES_DB: mydatabase
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - db-data:/var/lib/postgresql/data
+
+# volumes:
+#   db-data:
