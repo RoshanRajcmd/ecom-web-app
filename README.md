@@ -1,20 +1,41 @@
 # EcomWeb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+An e-commerce website using MEAN stack and containerized using Docker.
 
-## Tech Stack and Frameworks
+## ⚙️ Source Code
+
+FrontEnd: [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+
+## 📚 Tech Stack and Packages
+
+* MongoDB
+* Express.js
 * Angular.js
+* Node.js
 
-## Features
+
+## 🎛️ Features
+
 1. Advance Search and Shop
 2. Add and Remove items to the cart
 3. Tags and Categorization of items
 
-## Development server
+## 🧑‍💻 Developer setup
 
+### 🐳 With Docker
+
+*For Client* 
+
+Run the command `docker compose -f 'docker-compose.yml' up -d --build`. Navigate to `http://localhost:4200/` in a browser.
+
+### 🎣 Without Docker
+
+*For Client* 
+
+Naviage to client folder in project `cd client`.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` in a browser. The app will automatically reload if you change any of the source files.
 
-## ScreenShots
+## 📸 Screenshots
 
 ![Screenshot 2024-12-21 at 11 22 07 AM](https://github.com/user-attachments/assets/eb4b8ac7-447e-4a4c-8884-8cc855de6d71)
 ![Screenshot 2024-12-21 at 11 25 13 AM](https://github.com/user-attachments/assets/6e16596f-f69b-4340-8704-c21ad0174f76)
