@@ -24,9 +24,7 @@ FrontEnd: [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
 ### 🐳 With Docker
 
-*For Client* 
-
-Run the command `docker compose -f 'docker-compose.yml' up -d --build`. Navigate to `http://localhost:4200/` in a browser.
+Run the command `docker compose -f 'docker-compose.yml' up -d --build`. Navigate to `http://localhost:4200/` in a browser. Server will be running in `http://localhost:3000/` and Mongo DB is on port `27017`.
 
 ### 🎣 Without Docker
 
@@ -34,6 +32,15 @@ Run the command `docker compose -f 'docker-compose.yml' up -d --build`. Navigate
 
 Naviage to client folder in project `cd client`.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` in a browser. The app will automatically reload if you change any of the source files.
+
+*For Server*
+
+Navigate to the server folder in the project `cd server`.
+Run `npm start` to start the Express.js server. The server will be running at `http://localhost:3000/`.
+
+*For DB*
+
+The MongoDB connection string is `mongodb://127.0.0.1:27017`.
 
 ## 📸 Screenshots
 

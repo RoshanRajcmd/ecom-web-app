@@ -8,28 +8,29 @@ services:
       dockerfile: client/Dockerfile
     ports:
       - "4200:4200"
+    depends_on:
+      - backend
 
-#     depends_on:
-#       - backend
-#       - db
+  backend:
+    image: ecom-server-app
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    # expose the port to the host machine only when you are developing
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URL=mongodb://db:27017/ecom-web-app
+    depends_on:
+      - mongodb
 
-#   backend:
-#     image: backend-image
-#     ports:
-#       - "4000:4000"
-#     environment:
-#       - DATABASE_URL=postgres://user:password@db:5432/mydatabase
+  mongodb:
+    image: mongo:4.2
+    # expose the port to the host machine only when you are developing
+    ports:
+      - "27017:27017"
+    volumes:
+      - db-data:/data/db
 
-#   db:
-#     image: postgres:13
-#     environment:
-#       POSTGRES_USER: user
-#       POSTGRES_PASSWORD: password
-#       POSTGRES_DB: mydatabase
-#     ports:
-#       - "5432:5432"
-#     volumes:
-#       - db-data:/var/lib/postgresql/data
-
-# volumes:
-#   db-data:
+volumes:
+  db-data:
